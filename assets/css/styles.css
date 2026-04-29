@@ -5,17 +5,9 @@
   font-style: oblique 0deg 20deg; /* Supports slanting ranges */
 }
 
-.flex-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  min-height: 60vh; /* Full viewport height */;
-}
-
 .logo-size {
-  width: 100%;    /* Scales to fill parent container */
-  max-width: 600px; /* Prevents image from getting too large */
+  width: 80%;    /* Scales to fill parent container */
+  max-width: 60%; /* Prevents image from getting too large */
   height: auto;   /* Maintains original proportions */
 }
 
@@ -42,6 +34,10 @@ body {
 }
 
 main{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   background-image: url('/assets/img/Fondo-ilus-01.png');
   background-size: cover;
   background-position: center;
@@ -49,5 +45,57 @@ main{
   min-height: 1000px;
 }
 
+.container {
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 60vh; /* Full viewport height */;
+}
+
+.miniboxes{
+  color: rgb(235, 235, 235);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px; /* Space between boxes */
+  margin-top: 100px; /* Space above the boxes */
+}
+
+.miniboxes h2 {
+  margin-top: 15px;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 800;
+  margin-bottom: 5px;
+}
+
+.minibox{
+  width: 260px;
+  height: 240px; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.minibox p {
+  color: rgb(255, 0, 93);
+  font-size: 1.2rem;
+  font-style: italic;
+  font-weight: 600;
+}
+
+.shadowbox {
+  display: flex;
+  align-items: center;    /* Vertically centers child elements */
+  justify-content: center;
+  color: #FFFF9C;
+  width: 45%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4); /* Semi-transparent black */
+  border-radius: 15px; /* Rounded corners */
+}
 
 
