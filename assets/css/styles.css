@@ -1,0 +1,53 @@
+@font-face {
+  font-family: 'Montserrat';
+  src: url('fonts/Montserrat-VariableFont_wght.ttf') format('truetype-variations');
+  font-weight: 100 900; /* Supports any weight between 100 and 900 */
+  font-style: oblique 0deg 20deg; /* Supports slanting ranges */
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 60vh; /* Full viewport height */;
+}
+
+.logo-size {
+  width: 100%;    /* Scales to fill parent container */
+  max-width: 600px; /* Prevents image from getting too large */
+  height: auto;   /* Maintains original proportions */
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+}
+
+.navbar_bg {
+  background-image: url('/assets/img/bg_navbar.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  /* Optional: Add a height if the image needs more space */
+  min-height: 60px; 
+}
+
+.active{
+  color: rgb(255, 0, 93) !important;  
+}
+
+.nav-link:hover{
+  color: rgb(255, 0, 93);
+}
+
+main{
+  background-image: url('/assets/img/Fondo-ilus-01.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 1000px;
+}
+
+
+
