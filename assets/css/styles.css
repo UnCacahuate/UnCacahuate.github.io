@@ -1,3 +1,7 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Jersey+10&display=swap');
+
+
 @font-face {
   font-family: 'Montserrat';
   src: url('fonts/Montserrat-VariableFont_wght.ttf') format('truetype-variations');
@@ -7,7 +11,7 @@
 
 .logo-size {
   width: 80%;    /* Scales to fill parent container */
-  max-width: 60%; /* Prevents image from getting too large */
+  max-width: 50%; /* Prevents image from getting too large */
   height: auto;   /* Maintains original proportions */
 }
 
@@ -33,24 +37,86 @@ body {
   color: rgb(255, 0, 93);
 }
 
+h3 {
+  font-family: "Jersey 10", sans-serif;
+  font-size: 5rem;
+  letter-spacing: 5px;
+}
+
+.txt_white {
+  color: rgb(240, 240, 240);
+}
+
+h4 {
+  color: rgb(255, 0, 93);
+  font-size: 2rem;
+  font-weight: 800;
+  margin-bottom: 2px;
+}
+
+.subtitulo {
+  color: rgb(130, 130, 130);
+  font-size: 1.2rem;
+  font-style: italic;
+  font-weight: 600;
+}
+
+.parrafo{
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: rgb(111, 111, 111);
+}
+
 main{
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+
+.bg-black {
   background-image: url('/assets/img/Fondo-ilus-01.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  min-height: 1000px;
+  min-height: 1500px;
+  width : 100%;
 }
 
-.container {
-  margin-top: 100px;
+.bg-white {
+  background-image: url('/assets/img/Fondo-white.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 1000px;
+  width : 100%;
+}
+
+.bg-pink {
+  background-image: url('/assets/img/Fondo-pink.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 2000px;
+  width : 100%;
+}
+
+.container_main {
+  margin-top: 230px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  text-align: center;
+  min-height: 60vh; /* Full viewport height */;
+}
+
+.container_sec {
+  margin-top: 100px;
+  padding-top: 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   min-height: 60vh; /* Full viewport height */;
 }
 
@@ -60,7 +126,7 @@ main{
   flex-wrap: wrap;
   justify-content: center;
   gap: 40px; /* Space between boxes */
-  margin-top: 100px; /* Space above the boxes */
+  margin-top: 400px; /* Space above the boxes */
 }
 
 .miniboxes h2 {
