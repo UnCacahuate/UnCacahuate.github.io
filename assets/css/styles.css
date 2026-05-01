@@ -10,14 +10,27 @@
 }
 
 .logo-size {
-  width: 80%;    /* Scales to fill parent container */
-  max-width: 50%; /* Prevents image from getting too large */
+  width: 90%;    /* Scales to fill parent container */
+  max-width: 60%; /* Prevents image from getting too large */
   height: auto;   /* Maintains original proportions */
 }
 
 body {
   font-family: 'Montserrat', sans-serif;
   font-weight: 700;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* El cuerpo ocupa al menos toda la pantalla */
+  margin: 0;
+}
+
+main {
+  flex: 1; /* El main ocupa el espacio restante */
+}
+
+footer {
+  color: white;
+  padding: 30px; /* Usa padding en lugar de height para que sea flexible */
 }
 
 .navbar_bg {
@@ -45,6 +58,11 @@ h3 {
 
 .txt_white {
   color: rgb(240, 240, 240);
+}
+
+.boxspecial {
+  padding-top: 300px;
+  color: rgb(235, 235, 235);
 }
 
 h4 {
@@ -87,7 +105,6 @@ main{
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  min-height: 1500px;
   width : 100%;
 }
 
@@ -96,7 +113,14 @@ main{
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  min-height: 1000px;
+  width : 100%;
+}
+
+.bg-black02 {
+  background-image: url('/assets/img/Fondo-black.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   width : 100%;
 }
 
@@ -122,10 +146,11 @@ main{
 .container_sec {
   margin-top: 100px;
   padding-top: 0px;
+  padding-bottom: 150px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  min-height: 60vh; /* Full viewport height */;
+  min-height: 20vh; /* Full viewport height */;
 }
 
 .miniboxes{
@@ -134,7 +159,7 @@ main{
   flex-wrap: wrap;
   justify-content: center;
   gap: 40px; /* Space between boxes */
-  margin-top: 400px; /* Space above the boxes */
+  margin: 0px 0 200px 0; /* Space above the boxes */
 }
 
 .miniboxes h2 {
@@ -208,5 +233,11 @@ main{
 .btn-white {
   background-color: rgb(255, 255, 255);
   color: rgb(0, 0, 0);
+  font-weight: 700;
+}
+
+.btn-black {
+  background-color: rgb(29, 29, 29);
+  color: #FFFF9C;;
   font-weight: 700;
 }
